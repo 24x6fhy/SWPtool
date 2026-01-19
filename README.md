@@ -36,6 +36,8 @@ This repository includes examples using the **RACECAR Dataset** — the first op
 # Download a single scenario (e.g., S1 - Solo Slow Lap)
 aws s3 cp s3://racecar-dataset/RACECAR-ROS2/S1/M-SOLO-SLOW-KAIST ./data/S1/M-SOLO-SLOW-KAIST --recursive --no-sign-request
 
+
+
 # Download all scenarios
 aws s3 cp s3://racecar-dataset/RACECAR-ROS2/ ./data/ --recursive --no-sign-request
 ```
@@ -62,8 +64,8 @@ data/
 
 ```powershell
 # Install
-git clone https://github.com/24x6fhy/racecar-energy-proxy.git
-cd racecar-energy-proxy
+git clone https://github.com/24x6fhy/SWPtool.git
+cd SWPtool
 pip install -r requirements.txt
 
 # Step 1: Compute proxy scores per run
