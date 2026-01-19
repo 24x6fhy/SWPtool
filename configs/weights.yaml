@@ -1,0 +1,27 @@
+# Weight configuration for Racecar Energy Proxy
+
+topic_weights:
+  "^/vehicle_\\d+/camera/.*": 3.0
+
+  "^/vehicle_\\d+/luminar.*_points$": 10.0
+
+  "^/vehicle_\\d+/novatel_.*/bestpos$": 1.5
+  "^/vehicle_\\d+/novatel_.*/bestgnsspos$": 1.5
+  "^/vehicle_\\d+/novatel_.*/bestvel$": 1.5
+  "^/vehicle_\\d+/novatel_.*/rawimux$": 2.5
+  "^/vehicle_\\d+/novatel_.*/heading2$": 1.0
+  "^/vehicle_\\d+/novatel_.*/oem7raw$": 0.8
+  "^/vehicle_\\d+/novatel_.*/time$": 0.8
+
+  "^/vehicle_\\d+/radar_front/esr_status.*$": 0.5
+  "^/vehicle_\\d+/radar_front/esr_track$": 3.0
+  "^/vehicle_\\d+/radar_front/esr_valid.*$": 0.5
+  "^/vehicle_\\d+/radar_front/esr_vehicle.*$": 3.0
+  "^/vehicle_\\d+/radar_front/from_can_bus$": 0.5
+  "^/vehicle_\\d+/radar_front/to_can_bus$": 0.5
+  "^/vehicle_\\d+/radar_front/radar_visz_.*$": 0.5
+
+  "^/vehicle_\\d+/radar_.*/marker$": 0.5
+  "^/vehicle_\\d+/radar_.*/detection$": 3.0
+
+  "^/vehicle_\\d+/local_odometry$": 0.1

@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (large, download separately)
+data/**/*.db3
+data/**/*.db3.*
+
+# Keep data folder structure
+!data/README.md
+!data/**/
+
+# Outputs (regenerable)
+outputs/features.csv
+outputs/proxy_results.csv
+outputs/proxy_summary.json
+outputs/models/*.joblib
+outputs/models/*.csv
+outputs/models/*.json
+outputs/models/plots/
+
+# Keep output folder structure
+!outputs/README.md
