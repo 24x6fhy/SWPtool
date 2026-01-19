@@ -1,0 +1,5 @@
+check,x,y,tests,level,n,r
+SC1,Distance,Total SWP,Accumulation,run,18,0.7924
+SC2,Duration,SWP/hr,Time norm,run,18,0.5936
+SC3,Speed,SWP/km,Distance norm,run,18,0.0929
+SC4,Speed,SWP/km,Distance norm,slice,236,-0.1857

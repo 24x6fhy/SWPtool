@@ -1,0 +1,8 @@
+feature,importance
+odometry_ratio,0.64159536
+imu_ratio,0.30230224
+radar_ratio,0.037897244
+lidar_ratio,0.0149449725
+distance_km,0.0031960083
+image_ratio,6.418191e-05
+duration,0.0

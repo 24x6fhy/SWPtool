@@ -1,0 +1,15 @@
+model,feature,importance,rank
+random_forest,imu_ratio,0.5614621492328714,1
+random_forest,odometry_ratio,0.3611563394626592,2
+random_forest,lidar_ratio,0.03584757535383644,3
+random_forest,radar_ratio,0.03348605858553022,4
+random_forest,distance_km,0.007899310072162043,5
+random_forest,image_ratio,0.0001485672929406164,6
+random_forest,duration,0.0,7
+xgboost,odometry_ratio,0.6415953636169434,1
+xgboost,imu_ratio,0.3023022413253784,2
+xgboost,radar_ratio,0.03789724409580231,3
+xgboost,lidar_ratio,0.014944972470402718,4
+xgboost,distance_km,0.0031960082706063986,5
+xgboost,image_ratio,6.418191333068535e-05,6
+xgboost,duration,0.0,7

@@ -5,7 +5,6 @@ import pandas as pd
 from sklearn.model_selection import GroupShuffleSplit
 from pathlib import Path
 import yaml
-import random
     
 def load_weights(config_path: str = None):
     if config_path is None:
@@ -71,17 +70,15 @@ def load_and_prepare(csv_path: str): # load features and prep data
     candidate_feats = [
         "duration",
         "distance_km",
-        "msg_rate",
-        "image_rate",
-        "lidar_rate",
-        "radar_rate",
-        "imu_rate",
-        "odometry_rate",
         "image_ratio",
         "lidar_ratio",
         "radar_ratio",
         "imu_ratio",
         "odometry_ratio",
+        "lidar_to_camera_ratio",
+        "radar_to_lidar_ratio",
+        "perception_to_nav_ratio",
+        "n_active_topics",
     ]
 
     feature_names = []

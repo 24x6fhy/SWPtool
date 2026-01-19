@@ -38,14 +38,5 @@ data/**/*.db3.*
 !data/README.md
 !data/**/
 
-# Outputs (regenerable)
-outputs/features.csv
-outputs/proxy_results.csv
-outputs/proxy_summary.json
-outputs/models/*.joblib
-outputs/models/*.csv
-outputs/models/*.json
-outputs/models/plots/
-
 # Keep output folder structure
-!outputs/README.md
+!outputs/

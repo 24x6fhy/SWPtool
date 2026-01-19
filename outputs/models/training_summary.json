@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-01-19T22:44:04.403623",
+  "n_samples": 236,
+  "n_features": 7,
+  "feature_names": [
+    "duration",
+    "distance_km",
+    "image_ratio",
+    "lidar_ratio",
+    "radar_ratio",
+    "imu_ratio",
+    "odometry_ratio"
+  ],
+  "best_model": "xgboost",
+  "best_r2": 0.923,
+  "models": [
+    {
+      "name": "linear_regression",
+      "r2": 0.9212,
+      "mae": 56232.1953,
+      "rmse": 87030.8768
+    },
+    {
+      "name": "random_forest",
+      "r2": 0.8932,
+      "mae": 59213.8373,
+      "rmse": 101305.2972
+    },
+    {
+      "name": "xgboost",
+      "r2": 0.923,
+      "mae": 39252.5671,
+      "rmse": 85996.2455
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-01-19T22:02:16.004990",
+  "config": {
+    "data_path": "D:\\racecar\\SWPtool\\SWPtool\\data",
+    "weights_path": "D:\\racecar\\SWPtool\\SWPtool\\configs\\weights.yaml",
+    "odometry_topic": "local_odometry"
+  },
+  "databases_processed": 18,
+  "databases_found": 19,
+  "total_messages": 37856402,
+  "total_weighted_pts": 53636819.8,
+  "total_duration_hours": 3.64,
+  "total_distance_km": 3518.12,
+  "avg_pts_per_hour": 14732152.22,
+  "avg_pts_per_km": 15245.88
+}
