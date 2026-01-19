@@ -22,8 +22,6 @@ def run_pipeline(X, y, df, features, groups, output_dir, plots_dir,
                  verbose=True):
     
     from utils.loaders import split_data
-
-    print("ML TRAINING")
     
     # setup folders
     output_dir = Path(output_dir)
@@ -68,7 +66,7 @@ def run_pipeline(X, y, df, features, groups, output_dir, plots_dir,
         if not skip_robustness:
             rob["random_forest"] = test_feature_dropout(m, X_test, y_test, features, "random_forest")
 
-    if "xgboost" in models and HAS_XGB:
+    if "xgboost" in models:
         if verbose: print("  Training xgboost...")
         m = XGBRegressor(
             n_estimators=n_estimators, 
