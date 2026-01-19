@@ -182,11 +182,22 @@ python src/scripts/train_model.py --n-estimators 500 --max-depth 8
 
 The deterministic proxy is transparent but may fail when logs are incomplete (missing topics, corrupted modality streams). ML models are trained to predict the proxy from aggregated features.
 
-**Features** (11 total — see paper Section 3.2.5):
-- **Temporal**: Duration of time slice (seconds)
-- **Spatial**: Distance traveled (km), average speed (km/h)
-- **Cross-sensor ratios**: lidar-to-camera, radar-to-lidar, perception-to-navigation
-- **Per-modality ratios**: fraction of each sensor's contribution (image, lidar, radar, IMU, odometry)
+**Features** (12 total):
+[
+    "duration",
+    "distance_km",
+    "avg_speed_kmh",
+    "image_ratio",
+    "lidar_ratio",
+    "radar_ratio",
+    "imu_ratio",
+    "odometry_ratio",
+    "lidar_to_camera_ratio",
+    "radar_to_lidar_ratio",
+    "perception_to_nav_ratio",
+    "n_active_topics",
+]
+
 
 Note: Raw message counts and per-sensor rates are excluded from features to avoid circular correlation with the target (proxy is computed from counts).
 
